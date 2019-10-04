@@ -1,0 +1,14 @@
+{
+  "name": "Better Basecamp Styles",
+  "version": "1.0",
+  "description": "Make Basecamp's task list easier to read on desktop.",
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["https://3.basecamp.com/*"], 
+      "js": ["js/jquery.min.js", "js/todo.js"],
+      "css" : ["css/todo.css"]
+    }
+  ],
+  "manifest_version": 2
+}
